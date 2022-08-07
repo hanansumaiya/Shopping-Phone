@@ -4,12 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Shopping</h1>
-    <h3>Sumaiya</h3>
+    <header>
+      <h1
+        class="text-5xl font-semibold text-center underline text-rose-400 mt-5"
+      >
+        Shopping Phone
+      </h1>
+    </header>
+    <main>
+      <!-- phone scetion -->
+      <section class="container mx-auto">
+        <div class="grid grid-cols-4 flex items-center mt-12">
+          <div class="flex justify-center">
+            <img class="w-3/4 aspect-square" src="images/iphone13.jpg" alt="" />
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              id="phone-minus"
+              class="bg-slate-200 p-2 font-semibold text-3xl"
+            >
+              -
+            </button>
+            <input
+              id="phone-number"
+              type="number"
+              value="1"
+              class="form-control font-semibold text-2xl text-center w-16"
+            />
+            <button
+              id="phone-plus"
+              class="bg-slate-200 p-2 font-semibold text-3xl"
+            >
+              +
+            </button>
+          </div>
+          <div>
+            <p class="p-2 font-semibold text-3xl text-center">
+              $ <span id="phone-total">100</span>
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img src="images/remove.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- case section -->
+      <section class="container mx-auto">
+        <div class="grid grid-cols-4 flex items-center mt-12">
+          <div class="flex justify-center">
+            <img
+              class="w-3/4 aspect-square"
+              src="images/backcover.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="flex justify-center">
+            <button
+              id="case-minus"
+              class="bg-slate-200 p-2 font-semibold text-3xl"
+            >
+              -
+            </button>
+            <input
+              id="case-number"
+              type="number"
+              value="1"
+              class="form-control font-semibold text-2xl text-center w-16"
+            />
+            <button
+              id="case-plus"
+              class="bg-slate-200 p-2 font-semibold text-3xl"
+            >
+              +
+            </button>
+          </div>
+          <div>
+            <p class="p-2 font-semibold text-3xl text-center">
+              $ <span id="case-total">20</span>
+            </p>
+          </div>
+          <div class="flex justify-center">
+            <img src="images/remove.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto">
+        <div
+          class="columns-2 flex justify-end border border-rose-200 rounded py-4"
+        >
+          <div class="w-32 font-semibold text-lg">
+            <h4>SubTotal :</h4>
+            <h4>Tax :</h4>
+            <h4>Total :</h4>
+          </div>
+          <div class="w-32 font-semibold text-lg">
+            <h4>$ <span id="subtotal">120</span></h4>
+            <h4>$ <span id="tax">00</span></h4>
+            <h4>$ <span id="total">120</span></h4>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Script add -->
     <script src="index.js"></script>
   </body>
